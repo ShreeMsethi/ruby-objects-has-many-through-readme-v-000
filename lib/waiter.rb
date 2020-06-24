@@ -18,7 +18,7 @@ class Waiter
   end
   
   def meals
-    Meal.all.map {|meal| meal.waiter == self}
+    Meal.all.map {|meal| meal.waiter}
   end
   
   def best_tipper
